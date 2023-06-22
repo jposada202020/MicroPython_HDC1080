@@ -49,7 +49,7 @@ class HDC1080:
     """Driver for the HDC1080 Sensor connected over I2C.
 
     :param ~machine.I2C i2c: The I2C bus the HDC1080 is connected to.
-    :param int address: The I2C device address. Defaults to :const:`0x80`
+    :param int address: The I2C device address. Defaults to :const:`0x40`
 
     :raises RuntimeError: if the sensor is not found
 
