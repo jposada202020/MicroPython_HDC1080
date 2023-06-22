@@ -1,0 +1,9 @@
+{
+  "urls": [
+    ["micropython_hdc1080/examples/hdc1080_operation_mode.py", "github:jposada202020/MicroPython_HDC1080/examples/hdc1080_operation_mode.py"],
+    ["micropython_hdc1080/examples/hdc1080_temperature_resolution.py", "github:jposada202020/MicroPython_HDC1080/examples/hdc1080_temperature_resolution.py"],
+    ["micropython_hdc1080/examples/hdc1080_simpletest.py", "github:jposada202020/MicroPython_HDC1080/examples/hdc1080_simpletest.py"],
+    ["micropython_hdc1080/examples/hdc1080_humidity_resolution.py", "github:jposada202020/MicroPython_HDC1080/examples/hdc1080_humidity_resolution.py"]
+  ],
+  "version": "0.1"
+}
