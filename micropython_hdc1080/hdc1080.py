@@ -74,6 +74,8 @@ class HDC1080:
 
     .. code-block:: python
 
+        temp = hdc1080.temperature
+
     """
 
     _device_id = RegisterStruct(_WHO_AM_I, ">H")

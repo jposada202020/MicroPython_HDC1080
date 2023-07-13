@@ -20,7 +20,6 @@ authors = [
 urls = {Homepage = "https://github.com/jposada202020/MicroPython_HDC1080"}
 keywords = [
     "sensor",
-    "micropython",
     "hdc1080",
     "micropython",
     "driver",

@@ -15,8 +15,7 @@ while True:
     for operation_mode in hdc1080.operation_mode_values:
         print("Current Operation mode setting: ", hdc.operation_mode)
         for _ in range(10):
-            temp = hdc.temperature
-            print("Temperature: {:.2f}C".format(temp))
+            print(f"Temperature: {hdc.temperature:.2f}°C")
             print()
             time.sleep(0.5)
         hdc.operation_mode = operation_mode

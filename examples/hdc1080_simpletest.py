@@ -11,7 +11,7 @@ hdc = hdc1080.HDC1080(i2c)
 
 while True:
     temperature, humidity = hdc.measurements
-    print("Temperature: {:.2f} C".format(temperature))
-    print("Humidity: {:.2f} %%".format(humidity))
+    print(f"Temperature: {temperature:.2f}°C")
+    print(f"Humidity: {humidity:.2f}%")
     print("")
     time.sleep(0.5)

@@ -16,7 +16,7 @@ while True:
         print("Current Humidity resolution setting: ", hdc.humidity_resolution)
         for _ in range(10):
             temp = hdc.temperature
-            print("Temperature: {:.2f}C".format(temp))
+            print(f"Temperature: {temp:.2f}°C")
             print()
             time.sleep(0.5)
         hdc.humidity_resolution = humidity_resolution
