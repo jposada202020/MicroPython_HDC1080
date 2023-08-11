@@ -8,7 +8,7 @@
 MicroPython driver for the TI HDC1080 Temperature and Humidity sensor
 
 
-* Author(s): Jose D. Montoya
+* Author: Jose D. Montoya
 
 
 """
@@ -90,7 +90,7 @@ class HDC1080:
         self._address = address
 
         if self._device_id != 0x1050:
-            raise RuntimeError("Failed to find HDC1080")
+            raise RuntimeError("Failed to find the HDC1080 sensor")
 
     @property
     def operation_mode(self) -> str:
@@ -179,12 +179,12 @@ class HDC1080:
         msb_temp = data[0] << 8
         lsb_temp = data[1]
         raw_temp = msb_temp | lsb_temp
-        temp = ((raw_temp / 2**16) * 165) - 40
+        temp = ((raw_temp / 2**16.0) * 165) - 40
 
         msb_hum = data[2] << 8
         lsb_hum = data[3]
         raw_hum = msb_hum | lsb_hum
-        hum = (raw_hum / 2**16) * 100
+        hum = (raw_hum / 2**16.0) * 100
 
         return temp, hum
 
@@ -226,4 +226,4 @@ class HDC1080:
 
         self._operation_mode = True
 
-        return (raw_hum / 2**16) * 100
+        return (raw_hum / 2**16.0) * 100

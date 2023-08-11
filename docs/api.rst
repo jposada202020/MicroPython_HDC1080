@@ -1,4 +1,4 @@
-MicroPython HDC1080 Library
+MicroPython HDC1080 Driver
 =====================================================================
 
 
